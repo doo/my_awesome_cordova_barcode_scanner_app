@@ -7,8 +7,20 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+  <ion-item (click)="scanBarcode()">
+    <ion-label>Start Barcode & QR-Code Scanner</ion-label>
+  </ion-item>
+  <div *ngIf="imageFileUri">
+    <p>Snapped Image:</p>
+    <img [src]="imageFileUri" style="width: 60%" />
+  </div>
+  <ion-list-header>
+    Detected Barcodes:
+  </ion-list-header>
+  <ion-item *ngFor="let barcode of barcodes">
+    <ion-label>
+      <h3>Type: {{ barcode.type }}</h3>
+      <p>Value: {{ barcode.text }}</p>
+    </ion-label>
+  </ion-item>
 </ion-content>
