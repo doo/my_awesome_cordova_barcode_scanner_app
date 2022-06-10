@@ -39,7 +39,6 @@
     "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^5.0.0",
-    "cordova-plugin-scanbot-sdk": "^4.14.0",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
     "typescript": "2.6.2"
@@ -52,7 +51,7 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
-      "cordova-plugin-scanbot-sdk": {
+      "cordova-plugin-scanbot-barcode-scanner": {
         "CAMERA_USAGE_DESCRIPTION": " "
       },
       "cordova-plugin-androidx-adapter": {},
