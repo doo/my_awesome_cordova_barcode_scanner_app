@@ -23,8 +23,6 @@
     "@ionic-native/splash-screen": "4.20.0",
     "@ionic-native/status-bar": "4.20.0",
     "@ionic/storage": "2.2.0",
-    "cordova-android": "10.1.2",
-    "cordova-ios": "6.2.0",
     "cordova-plugin-scanbot-barcode-scanner": "^3.1.0",
     "ionic-angular": "3.9.9",
     "ionicons": "3.0.0",
@@ -34,7 +32,11 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.4",
-    "cordova-plugin-device": "^2.0.2",
+    "cordova-android": "^10.1.2",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-androidx": "^1.0.2",
+    "cordova-plugin-androidx-adapter": "^1.1.0",
+    "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-scanbot-sdk": "^4.14.0",
@@ -52,7 +54,9 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-scanbot-sdk": {
         "CAMERA_USAGE_DESCRIPTION": " "
-      }
+      },
+      "cordova-plugin-androidx-adapter": {},
+      "cordova-plugin-androidx": {}
     },
     "platforms": [
       "ios",
